@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none; 
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+margin:0;
+padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primaryTextColor);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.logo img{
+    width: 100%;
+    height: 80px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:15px;
+}
+
+.button {
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+    background-color: #fff;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-decor {
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr);
+    transform: translateX(-100%);
+    transition: transform .3s;
+    z-index: 0;
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button__icon {
+    width: 48px;
+    height: 40px;
+    background-color: var(--clr);
+    display: grid;
+    place-items: center;
+  }
+  
+  .button__text {
+    display: inline-block;
+    transition: color .2s;
+    padding: 2px 1.5rem 2px;
+    padding-left: .75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+  
+  .button:hover .button__text {
+    color: #fff;
+  }
+  
+  .button:hover .button-decor {
+    transform: translate(0);
+  }
+  .call {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px #0003;
+    color: #fff;
+    display: flex;
+    font-family: inherit;
+    font-size: 18px;
+    justify-content: center;
+    padding: .4rem .9rem;
+    transition: all .3s;
+    background: linear-gradient(45deg, #000, #3e0c71 50%, #c217c5);
+  }
+  
+  .call svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .call span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .call:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  .call:hover span {
+    transform: translateX(7px);
+  }
+  
+  .navLinkList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navLinkList li{
+    padding-right: 20px;
+  }
+  .navLinkList li a {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .dropdown{
+    display: flex;
+  }
+  .dropdown svg{
+    margin-left:10px;
+  }
+  .dropdownlist{
+    display: none;
+  }
+  .dropdown:hover .dropdownlist{
+    display: block;
+  }
+  #herosection{
+    background-color: rgb(28 25 41/1);
+  }
+  .heroSection{
+    display: grid;
+grid-template-columns: repeat(2 ,minmax(0 , 1fr));
+    padding-top: 40px;
+    padding-bottom:6rem;
+    column-gap: 4rem;
+    row-gap:2rem;
+  }
+  .techimg img{
+    width: 80%;
+  }
+  .techheader{
+    font-size: 3.75rem;
+        line-height: 1;
+  }
+  .techpara{
+    margin-top: 2rem;
+  }
+  .techsubheader{
+    margin-top: 3rem;
+  }
+  .reviewspan{
+    color:rgb(107, 114, 128);
+  }
+  .review{
+    padding-top:1rem;
+  }
+  
+
+  /* learnersection */
+  /* #learner{
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+  } */
+  .onlinelearning{
+    width:50%;
+    margin:0 auto;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+  }
+  .subOnlineLearning{
+    display: grid;
+    grid-template-columns:repeat(3 ,minmax(0 , 1fr));
+    gap: 20px;
+    background: linear-gradient(45deg, #000, #3e0c71 50%, #c217c5);
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    border-radius: 20px;
+}
+.online{
+    font-size: 1rem;
+        line-height: 1.5rem;
+}
+.careerProgram{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: var(--primaryTextColor);
+    text-align: center;
+}
